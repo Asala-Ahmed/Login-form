@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="welcome.php" method="POST" class="form" name="form" onsubmit="return validate()">
+            <h1>Login</h1>
+            <br>
+            <div>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input id= "email" type="text" placeholder="Enter Email" name="email" style="display:inline ;">
+                <div id="email_error">Please enter your email</div>
+            </div>
+            <br>
+            <div>
+                <label for="psw"><b>Password</b></label>
+                <br>
+                <input type="password" placeholder="Enter Password" name="pass" id="pass" style="display: inline;">
+                <div id="pass_error">Please enter your password</div>
+            </div>
+            <br>
+            <button type="submit">Login</button>
+            <p><a href="signupform.html">Sign up</a></p>
+        </form>
+        <script src="validate.js"></script>
+    </body>

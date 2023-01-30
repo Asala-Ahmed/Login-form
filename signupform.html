@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sign up</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="signup.php" method="POST" class="form" name="form" onsubmit="return validateSignUp()">
+            <h1>Sign up</h1>
+            <br>
+            <div>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="text" placeholder="Enter Email" name="email" >
+                <div id="email_error">Please enter your email</div>
+            </div>
+            
+            <br>
+            <div>
+                <label for="name"><b>Name</b></label>
+                <br>
+                <input type="text" placeholder="Enter name" name="name" >
+                <div id="name_error">Please enter your name</div>
+            </div>
+            
+            <br>
+            <div>
+                <label for="pass"><b>Password</b></label>
+                <br>
+                <input type="password" placeholder="Enter Password" name="pass" >
+                <div id="pass_error">Please enter your password</div>
+            </div>
+            
+            <br>
+            <div>
+                <label for="confirm"><b>Confirm Password</b></label>
+                <br>
+                <input type="password" placeholder="Enter Password" name="confirm" >
+                <div id="confirmpass_error">Please confirm your password</div>
+            </div>
+            <br>
+            <button type="submit">Sign up</button>
+        </form>
+        <script src="validate.js"></script>
+    </body>

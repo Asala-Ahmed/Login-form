@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: url("background1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 125vh;
+}
+.form{
+    width: 400px;
+    height: 340px;
+    color: #ffffff;
+    background: linear-gradient(to top, rgb(0, 0, 0,0.8)50%, rgb(0, 0, 0,0.8)50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 40px 25px;
+}
+.form h1{
+    color: blueviolet;
+    text-align: center;
+}
+.form #email_error,
+.form #pass_error,
+.form #name_error,
+.form #confirmpass_error{
+    margin-top: 10px;
+    font-size: 18px;
+    color:#c62828;
+    background: rgba(255, 0, 0,0.1);
+    text-align: center;
+    padding :5 px 8 px;
+    border-radius: 3px;
+    border :1px solid #ef9a9a;
+    display: none;
+
+}
